@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>До и после — ZeeFrames</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="before-after.css?v=1">
+    <style>
+        html, body { margin: 0; background: #0B0B0B; }
+    </style>
+</head>
+<body>
+
+<section class="zba" id="before-after" data-zba>
+    <div class="zba-container">
+
+        <header class="zba-head">
+            <div>
+                <p class="zba-eyebrow">До и после</p>
+                <h2 class="zba-title">Между этими экранами — десять дней работы</h2>
+            </div>
+            <p class="zba-desc">Ни одного нового врача, аппарата или рубля сверху в рекламу. Та же клиника — просто теперь её видно.</p>
+        </header>
+
+        <div class="zba-grid">
+
+            <!-- ── Переключатель ─────────────────────────── -->
+            <div class="zba-seg" role="group" aria-label="Состояние">
+                <button type="button" class="zba-seg-btn" data-state="before" aria-pressed="true">Сегодня</button>
+                <button type="button" class="zba-seg-btn" data-state="after" aria-pressed="false">Через 10 дней</button>
+            </div>
+
+            <!-- ── Кадр с телефоном ─────────────────────────── -->
+            <figure class="zba-shot">
+                <div class="zba-frame">
+                    <div class="zba-frame-bg zba-frame-bg--before"></div>
+                    <div class="zba-frame-bg zba-frame-bg--after"></div>
+
+                    <div class="zba-phone" aria-hidden="true">
+                        <div class="zba-screen">
+                            <div class="zba-status">
+                                <span>21:40</span>
+                                <i class="zba-island"></i>
+                                <span class="zba-status-icons">
+                                    <svg width="15" height="9" viewBox="0 0 15 9"><rect x="0" y="6" width="2.5" height="3" rx=".6"/><rect x="4" y="4" width="2.5" height="5" rx=".6"/><rect x="8" y="2" width="2.5" height="7" rx=".6"/><rect x="12" y="0" width="2.5" height="9" rx=".6"/></svg>
+                                    <svg width="20" height="10" viewBox="0 0 20 10"><rect x=".5" y=".5" width="17" height="9" rx="2.5" fill="none" stroke="currentColor" opacity=".45"/><rect x="2" y="2" width="12" height="6" rx="1.4"/><rect x="18.5" y="3.2" width="1.3" height="3.6" rx=".6" opacity=".45"/></svg>
+                                </span>
+                            </div>
+
+                            <!-- Сегодня: пациент ищет в картах -->
+                            <div class="zba-app zba-app--before">
+                                <div class="zba-m-search">
+                                    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+                                    уролог площадь мужества
+                                </div>
+                                <div class="zba-m-chips">
+                                    <span class="is-on">Открыто сейчас</span><span>Запись онлайн</span><span>Рейтинг 4,5+</span>
+                                </div>
+                                <p class="zba-m-found">Найдено 10 клиник рядом</p>
+
+                                <div class="zba-m-card" data-t="5">
+                                    <i class="zba-pin">05</i>
+                                    <div class="zba-m-row">
+                                        <span class="zba-m-ava zba-m-ava--blue">СК</span>
+                                        <div>
+                                            <p class="zba-m-name">Соседняя клиника <em class="zba-m-ad">Реклама</em></p>
+                                            <p class="zba-m-meta"><b class="zba-m-stars">★★★★★</b> 4,9 · 196 оценок · 450 м</p>
+                                        </div>
+                                    </div>
+                                    <p class="zba-m-info"><span class="zba-m-ok">Открыто до 22:00</span> · приём от 1 400 ₽</p>
+                                    <div class="zba-m-btns"><span class="is-dark">Записаться</span><span>Маршрут</span></div>
+                                </div>
+
+                                <div class="zba-m-card zba-m-card--us" data-t="1">
+                                    <i class="zba-pin">01</i>
+                                    <div class="zba-m-row">
+                                        <span class="zba-m-ava">А</span>
+                                        <div>
+                                            <p class="zba-m-name">АМДЦ</p>
+                                            <p class="zba-m-meta">600 м · ул. Орбели, 19</p>
+                                        </div>
+                                    </div>
+                                    <div class="zba-m-lines">
+                                        <p class="zba-m-line" data-t="4"><b class="zba-m-stars">★★★★<s>★</s></b> 4,1 · всего 28 оценок<i class="zba-pin zba-pin--row">04</i></p>
+                                        <p class="zba-m-line zba-m-bad" data-t="6">Закрыто до 9:00<i class="zba-pin zba-pin--row">06</i></p>
+                                        <p class="zba-m-line" data-t="3">Цена — по телефону<i class="zba-pin zba-pin--row">03</i></p>
+                                    </div>
+                                    <div class="zba-m-btns"><span class="zba-t" data-t="2">Позвонить<i class="zba-pin">02</i></span><span>Маршрут</span></div>
+                                </div>
+
+                                <div class="zba-m-card">
+                                    <div class="zba-m-row">
+                                        <span class="zba-m-ava zba-m-ava--green">МЦ</span>
+                                        <div>
+                                            <p class="zba-m-name">Медцентр на Светлановском</p>
+                                            <p class="zba-m-meta"><b class="zba-m-stars">★★★★★</b> 4,7 · 341 оценка · 1,2 км</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Через десять дней: свой сайт -->
+                            <div class="zba-app zba-app--after">
+                                <div class="zba-s-url zba-t" data-t="1">
+                                    <svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+                                    am-dc.ru/urologiya
+                                    <i class="zba-pin">01</i>
+                                </div>
+                                <div class="zba-s-nav">
+                                    <span class="zba-s-logo"><i>А</i>АМДЦ</span>
+                                    <span class="zba-s-burger"><i></i><i></i><i></i></span>
+                                </div>
+                                <div class="zba-s-hero zba-t" data-t="5">
+                                    <i class="zba-pin">05</i>
+                                    <p class="zba-s-kicker">Урология · м. Площадь Мужества</p>
+                                    <p class="zba-s-h">Уролог без очереди<br>у&nbsp;метро</p>
+                                    <p class="zba-s-sub">Приём — от 300 ₽ · ул. Орбели, 19</p>
+                                    <span class="zba-s-cta zba-t" data-t="2">Записаться онлайн
+                                        <svg viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></svg>
+                                        <i class="zba-pin">02</i>
+                                    </span>
+                                </div>
+                                <div class="zba-s-slots">
+                                    <p class="zba-s-row zba-s-row--pin" data-t="6"><b>Свободно завтра</b><span>запись 24/7</span><i class="zba-pin zba-pin--row">06</i></p>
+                                    <div class="zba-s-times"><span>09:30</span><span class="is-on">10:15</span><span>11:00</span><span>12:30</span></div>
+                                </div>
+                                <div class="zba-s-list zba-t" data-t="3">
+                                    <i class="zba-pin">03</i>
+                                    <p class="zba-s-row"><span>Приём уролога</span><b>от 300 ₽</b></p>
+                                    <p class="zba-s-row"><span>УЗИ почек и мочевого</span><b>1 200 ₽</b></p>
+                                </div>
+                                <div class="zba-s-reviews zba-t" data-t="4">
+                                    <i class="zba-pin">04</i>
+                                    <p class="zba-s-score">4,9 <b>★★★★★</b></p>
+                                    <p class="zba-s-note">212 отзывов · 6 врачей · лицензия</p>
+                                </div>
+                                <div class="zba-s-docs">
+                                    <p class="zba-s-row"><b>Врачи отделения</b><span>все 6</span></p>
+                                    <div class="zba-s-faces"><i></i><i></i><i></i><i></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <figcaption class="zba-caption">
+                    <div class="zba-swap">
+                        <div class="zba-swap-item zba-swap-item--before">
+                            <p class="zba-cap-meta">21:40 · поиск в картах</p>
+                            <p class="zba-cap-title">Пациент видит соседей раньше вас</p>
+                        </div>
+                        <div class="zba-swap-item zba-swap-item--after">
+                            <p class="zba-cap-meta">21:40 · am-dc.ru</p>
+                            <p class="zba-cap-title">Пациент попадает сразу к вам</p>
+                        </div>
+                    </div>
+                </figcaption>
+            </figure>
+
+            <!-- ── Правая колонка ─────────────────────────── -->
+            <div class="zba-side">
+
+                <div class="zba-stat">
+                    <p class="zba-stat-num"><span class="zba-stat-val" aria-live="polite">0</span><span class="zba-stat-of">/6</span></p>
+                    <div class="zba-swap zba-stat-text">
+                        <p class="zba-swap-item zba-swap-item--before">пунктов в вашу пользу — пациент уходит к соседям</p>
+                        <p class="zba-swap-item zba-swap-item--after">пунктов в вашу пользу — пациент выбирает вас</p>
+                    </div>
+                </div>
+
+                <div class="zba-bar" aria-hidden="true">
+                    <i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i>
+                </div>
+
+                <ol class="zba-bento">
+                    <li class="zba-cell" data-i="1" style="--i:0" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a13.5 13.5 0 0 1 3.5 9A13.5 13.5 0 0 1 12 21a13.5 13.5 0 0 1-3.5-9A13.5 13.5 0 0 1 12 3z"/></svg></span>
+                            <span class="zba-num">01</span>
+                        </div>
+                        <h3 class="zba-cell-title">Адрес</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Строчка в чужом каталоге</p>
+                            <p class="zba-swap-item zba-swap-item--after">Свой сайт, который находят</p>
+                        </div>
+                    </li>
+                    <li class="zba-cell" data-i="2" style="--i:1" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M8 3v4M16 3v4M3.5 10h17"/><path d="m9.5 15 1.8 1.8 3.4-3.4"/></svg></span>
+                            <span class="zba-num">02</span>
+                        </div>
+                        <h3 class="zba-cell-title">Запись</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Только голосом, по телефону</p>
+                            <p class="zba-swap-item zba-swap-item--after">В два касания, круглосуточно</p>
+                        </div>
+                    </li>
+                    <li class="zba-cell" data-i="3" style="--i:2" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><path d="M12.6 3H5a2 2 0 0 0-2 2v7.6a2 2 0 0 0 .6 1.4l7.4 7.4a2.4 2.4 0 0 0 3.4 0l6.2-6.2a2.4 2.4 0 0 0 0-3.4L14 3.6a2 2 0 0 0-1.4-.6z"/><circle cx="8" cy="8" r="1.2"/></svg></span>
+                            <span class="zba-num">03</span>
+                        </div>
+                        <h3 class="zba-cell-title">Цена</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Знает только регистратура</p>
+                            <p class="zba-swap-item zba-swap-item--after">Открыта на странице услуги</p>
+                        </div>
+                    </li>
+                    <li class="zba-cell" data-i="4" style="--i:3" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><path d="M20.5 14.5a2 2 0 0 1-2 2H8l-4.5 4V5.5a2 2 0 0 1 2-2h13a2 2 0 0 1 2 2z"/><path d="m12 6.8 1.1 2.3 2.4.3-1.8 1.7.5 2.4-2.2-1.2-2.2 1.2.5-2.4-1.8-1.7 2.4-.3z"/></svg></span>
+                            <span class="zba-num">04</span>
+                        </div>
+                        <h3 class="zba-cell-title">Отзывы</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Разбросаны по четырём площадкам</p>
+                            <p class="zba-swap-item zba-swap-item--after">Рядом с врачами и лицензией</p>
+                        </div>
+                    </li>
+                    <li class="zba-cell" data-i="5" style="--i:4" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><path d="m3.5 10.5 16-5v13l-16-4z"/><path d="M11.5 16.9a3 3 0 1 1-5.8-1.5"/></svg></span>
+                            <span class="zba-num">05</span>
+                        </div>
+                        <h3 class="zba-cell-title">Реклама</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Клики уходят соседям</p>
+                            <p class="zba-swap-item zba-swap-item--after">Директ включается в тот же день</p>
+                        </div>
+                    </li>
+                    <li class="zba-cell" data-i="6" style="--i:5" tabindex="0">
+                        <div class="zba-cell-top">
+                            <span class="zba-icon"><svg viewBox="0 0 24 24"><path d="M12 3.5a6.5 6.5 0 0 0 8.5 8.5A8.5 8.5 0 1 1 12 3.5z"/></svg></span>
+                            <span class="zba-num">06</span>
+                        </div>
+                        <h3 class="zba-cell-title">После 20:00</h3>
+                        <div class="zba-swap">
+                            <p class="zba-swap-item zba-swap-item--before">Тишина до утра</p>
+                            <p class="zba-swap-item zba-swap-item--after">Заявки ждут вас утром</p>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="before-after.js?v=1"></script>
+</body>
+</html>
